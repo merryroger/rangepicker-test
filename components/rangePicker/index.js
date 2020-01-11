@@ -1,4 +1,4 @@
-import createElement from "../../lib/createElement.js";
+﻿import createElement from "../../lib/createElement.js";
 
 export default class RangePicker {
 
@@ -216,8 +216,8 @@ export default class RangePicker {
         detail:  this.selected
       }));
       this.close();
-      this.elems.from.innerHTML = this.selected.from.toLocaleString('en', {dateStyle: 'short'});
-      this.elems.to.innerHTML = this.selected.to.toLocaleString('en', {dateStyle: 'short'});
+      this.elems.from.innerHTML = this.selected.from.toLocaleString('default', {dateStyle: 'short'});
+      this.elems.to.innerHTML = this.selected.to.toLocaleString('default', {dateStyle: 'short'});
     }
 
   }
